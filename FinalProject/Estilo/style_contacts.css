@@ -1,0 +1,47 @@
+@import url('style.css');
+
+body > section > div > h2{
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+    text-decoration: underline;
+}
+
+body > section > div{
+    margin: 2rem;
+}
+
+body > section > div:nth-child(2){
+    text-align: center;
+}
+
+body > section > div:nth-child(2){
+    font-size: 0.85rem;
+    margin-top: 7rem;
+}
+
+body > section > div:nth-child(2) > p{
+    margin-top: 1rem;
+}
+
+body > section > div:nth-child(3){
+margin-top: 10rem;
+display: flex;
+justify-content: center; 
+align-items: center;
+}
+
+body > section > div:nth-child(3) > a:nth-child(1) > img{
+    width: 3.4rem;
+    margin-top: 0.25rem;
+}
+
+body > section > div:nth-child(3) > a:nth-child(2) > img{
+    width: 3.9rem;
+}
+
+body > section > div:nth-child(3) > a:nth-child(3) > img{
+    width: 3.5rem;
+    margin-top: 0.25rem;
+
+}

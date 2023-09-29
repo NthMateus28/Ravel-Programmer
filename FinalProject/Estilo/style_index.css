@@ -1,0 +1,87 @@
+@import url('style.css');
+
+body > article{
+    text-align: center;
+}
+
+body > article > img{
+    width: 10rem;
+}
+
+.cardLogin{
+    margin-top: 2rem;
+    box-shadow: 0 0 5px hsl(178, 100%, 60%) ;
+    border-radius: 1rem;        
+    padding: 0.1rem;
+    background-color: white;
+    text-align: center;
+    margin: 0.25rem;
+    background-color: black;
+}
+
+body > article > h2{
+    letter-spacing: 0.65rem;
+    width: 100%;
+    text-align: center;
+    color: hsl(178, 100%, 60%);
+    border-radius: 1rem;        
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    background-color: transparent;
+}
+
+/* Dentro do Card */
+body > article > main > h2{
+    background-color: transparent;
+}
+
+body > article > main > h4{
+    margin-top: 2rem;
+    font-size: 0.65rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    background-color: transparent;
+}
+
+body > article > main > div{
+    margin-top: 2rem;
+}
+
+body > article > main > div > span{
+    display: block;
+}
+
+body > article > main > div > input{
+    padding: 0.25rem;
+    width: 90%;
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Cantos arredondados */
+    background-color: #f2f2f2; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+    margin-top: 0.25rem;
+}
+
+body > article > main > div:nth-child(4){
+    margin-top: 1rem;
+}
+
+body > article > main > div:nth-child(5) > a > button{
+    width: 90%;
+    padding: 0.5rem 1rem;
+    background-color: hsl(178, 100%, 60%) ;
+    color: black;
+    text-align: center;
+    border: none;
+    border-radius:5px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+body > article > main > div:nth-child(6) > span{
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+/* hsl(178, 100%, 60%) */

@@ -1,0 +1,26 @@
+@import url('style.css');
+
+body > section > h2{
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+    text-decoration: underline;
+}
+
+body > section > div{
+    margin: 2rem;
+}
+
+body > section > div > h4{
+    color: white;
+    margin-top: 1.5rem;
+    font-size: 0.92rem;
+    text-indent: 2rem;
+}
+
+body > section > div > p{
+    font-size: 0.75rem;
+    text-indent: 1rem;
+    text-align: justify;
+    margin-top: 0.25rem;
+}

@@ -9,18 +9,10 @@
     color: white;
 }
 
-/* Menu */
-#mobile-menu {
-    display: none;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    transition: opacity 0.3s ease, height 0.3s ease;
-}
-
-#mobile-menu.open {
-    display: block;
-    opacity: 1; /* Torna o menu visível com opacidade total */
+#menu-image{
+    max-width: 20px;
+    width: 100%;
+    max-height: 20px;
     height: 100%;
 }
 
@@ -46,12 +38,16 @@ Quando a largura da tela atende a essa condição (768 pixels ou menos), as prop
         height: 100%;
         padding: 10px;
         z-index: 1;
-        transform: translateX(-100%);
-        transition: transform 0.3s ease; 
+        transform: translateX(-150%);
+        transition: transform 0.9s ease; 
     }
 
     #mobile-menu.open {
         transform: translateX(0); /* Quando a classe 'open' é aplicada, mova o menu de volta para a tela */
+        transition: transform 0.9s ease; 
+        display: block;
+        opacity: 1; 
+        height: 100%;
     }
 
     #mobile-menu ul {
@@ -97,83 +93,75 @@ body > header > div > span{
     text-decoration:solid
 }
 
-body > div > div.carousel > div:nth-child(1) > img{
-    width: 100%;
-}
-
-body > div.carousel-container > div.carousel > div:nth-child(2) > img{
-    width: 100%;
-}
-
-body > div.carousel-container > div.carousel > div:nth-child(3) > img{
-    width: 100%;
-}
 
         /* Estilos para o carrossel */
-        .carousel-container {
-            width: 100%;
-            max-width: 800px; /* Defina a largura máxima desejada */
-            margin: 0 auto;
-            position: relative;
-            overflow: hidden;
-        }
+.carousel-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
 
-        .carousel {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
 
-        .carousel-item {
-            flex: 0 0 100%;
-            max-width: 100%;
-        }
+.carousel-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 
-        /* Estilos para as setas */
-        .carousel-control {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            cursor: pointer;
-        }
+.item-carrosel {
+    width: 100%;
+}
 
-        .carousel-control.prev {
-            left: 10px;
-        }
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
 
-        .carousel-control.next {
-            right: 10px;
-        }
+.carousel-control.prev {
+    left: 10px;
+}
 
-        body > article{
-            margin: 2rem;
-        }
+.carousel-control.next {
+    right: 10px;
+}
 
-        body > article > h4{
-            color: white;
-            margin-top: 1.5rem;
-            font-size: 0.92rem;
-            text-indent: 2rem;
-        }
+body > article{
+    margin: 2rem;
+}
 
-        body > article > p{
-            font-size: 0.75rem;
-            text-indent: 1rem;
-            text-align: justify;
-            margin-top: 0.25rem;
-        }
+body > article > h4{
+    color: white;
+    margin-top: 1.5rem;
+    font-size: 0.92rem;
+    text-indent: 2rem;
+}
 
-        body > article > div:nth-child(3) > a > button{
-            padding: 0.5rem 1rem;
-            background-color: hsl(178, 100%, 60%);
-            color: black;
-            text-align: center;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 0.75rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
+body > article > p{
+    font-size: 0.75rem;
+    text-indent: 1rem;
+    text-align: justify;
+    margin-top: 0.25rem;
+}
+
+body > article > div:nth-child(3) > a > button{
+    padding: 0.5rem 1rem;
+    background-color: hsl(178, 100%, 60%);
+    color: black;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
 
 
 body > div:nth-child(4){
@@ -206,7 +194,6 @@ body > div:nth-child(4) > a{
     background-color: black;
 
 }
-
 body > div.card-container > main > div:nth-child(1) > img{
     width: 15rem;
     margin-left: 0.5rem;
@@ -233,7 +220,6 @@ body > div.card-container > main > div:nth-child(4) > span:nth-child(1){
 }
 
 body > div.card-container > main > div:nth-child(4) > span:nth-child(2){
-    text-size-adjust: 100%;
     box-sizing: border-box;
     background: hsl(178, 100%, 60%);
     border-radius: 0.75rem;
